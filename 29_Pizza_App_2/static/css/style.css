@@ -1,0 +1,40 @@
+body{
+    background-color: burlywood;
+}
+.navbar{
+    background-color: #D1E6DD;
+}
+/* .homeImage {
+    background-image: url("../images/nadiasgarden.jpg");
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 106px);
+} */
+
+
+
+#warning {
+    margin-top: 5px;
+    background-color: lightcoral;
+    color: rgb(27, 94, 153);
+    margin: auto;
+    height: 40px;
+    text-align: center;
+}
+
+#success {
+    margin-top: 5px;
+    background-color: rgb(24, 220, 24) ;
+    color:rgb(62, 38, 4);
+    margin: auto;
+    height: 40px;
+    text-align: center;
+}
+#info {
+    margin-top: 5px;
+    background-color: rgb(201, 229, 201) ;
+    color:rgb(62, 38, 4);
+    margin: auto;
+    height: 40px;
+    text-align: center;
+}

@@ -1,0 +1,32 @@
+{% extends 'pizzas/base.html' %}
+
+{% load static %}
+
+{% block content %}
+ 
+    <div class="homeImage">
+        {% comment %} <h1>home page</h1> {% endcomment %}
+    
+        {% if user.is_authenticated %}
+            <h2>welcome  {{ user.username }} </h2>
+        {% else %}
+            <h2>welcome guest</h2>       
+        {% endif %}
+        
+        {% if messages %} 
+        {% for message in messages %} 
+
+            {% if message.tags == "warning" %}
+                <div id="warning" class="message rounded col-md-2">{{ message }}</div>
+            {% elif message.tags == "success" %}
+                <div id="success" class="message rounded col-md-2">{{ message }}</div>
+            {% else %}
+                <div id="info" class="message rounded col-md-2">{{ message }}</div>
+            {% endif %} 
+        {% endfor %} 
+        {% endif %}
+
+</div>  
+
+{% endblock content %}
+    
